@@ -23,7 +23,7 @@ const FrontPage = () => {
 
     return(
     <Box sx={{ flexGrow: 1}}>
-        <Button onClick={() => {setFetchJoke(t => t + 1)}}color="inherit">Fetch Joke</Button>
+        <Button onClick={() => {setFetchJoke(t => t + 1)}}color="inherit">Get Joke</Button>
         {loading && <p>Loading a joke..</p>}
         {error && <p>{error}</p>}
         {joke && (<Card sx={{ minWidth: 275 }}>
